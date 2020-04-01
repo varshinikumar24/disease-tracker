@@ -8,7 +8,10 @@ export class DataService {
   constructor(private http: HttpClient) {
     
    }
-   getDetails() {
-    return this.http.get('https://corona.lmao.ninja/countries');
+   getDetails(CountryId) {
+    return this.http.get('https://corona.lmao.ninja/countries/'+CountryId)
   }
+  //  getDetails() {
+  //   return this.http.get('https://corona.lmao.ninja/countries');
+  // }
 }

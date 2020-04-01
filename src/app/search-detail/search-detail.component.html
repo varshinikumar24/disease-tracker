@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+<div class="col-md-12 form-container" >
+    <form [formGroup]="diseaseForm" (ngSubmit)="onSubmit()" #f="ngForm">
+       <div class="row">
+         <div class="col-md-5 " >
+           <div class="form-group">
+           <label style="margin:10px;" >Please enter first three letters of country name: </label>
+            <input type="text" placeholder="Enter details" class="form-control" name="countryName"
+              formControlName="country" [(ngModel)]="countryName" >
+              <button  type="submit" routerLink="/details/{{countryName}}" class="btn btn-success" >Search</button>   
+          </div>
+         </div>
+       </div>
+     </form>
+   </div>
+   </div>
+   </div>
+

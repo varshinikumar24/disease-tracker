@@ -8,10 +8,12 @@ import { AppComponent } from './app.component';
 import { DisplayDetailsComponent } from './display-details/display-details.component';
 import { DataService } from './data.service';
 import { RouterModule, Routes} from '@angular/router';
+import { SearchDetailComponent } from './search-detail/search-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DisplayDetailsComponent
+    DisplayDetailsComponent,
+    SearchDetailComponent
   ],
   imports: [
     BrowserModule,
