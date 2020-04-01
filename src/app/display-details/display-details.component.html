@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+<div class="col-md-12 form-container" >
+    <form [formGroup]="diseaseForm" (ngSubmit)="onSubmit()">
+       <div class="row">
+         <div class="col-md-5 form-group" >
+           <label style="margin:10px;" >Enter first three letters of country name: </label>
+            <input type="text" placeholder="Enter details" class="form-control" name="country"
+              formControlName="country">
+              <button routerLink="details/country" type="submit " class="btn btn-success" >Search</button>
+            <select class="form-control btn btn-info" style="margin-top:5%;">
+             <option>IND</option>
+             <option>USA</option>
+             <option>AFG</option>
+           </select>
+           
+         </div>
+       </div>
+     </form>
+   </div>
+   </div>
+   </div>
+
+<h5>Users</h5>
+
+<ul>
+  <li *ngFor="let data of datas$">
+    <a routerLink="/details">{{ data.country }}</a>
+
+    <ul>
+      <li>{{ data.cases }}</li>
+      <li>{{ data.cases }}</li>
+    </ul>
+  </li>
+</ul>
